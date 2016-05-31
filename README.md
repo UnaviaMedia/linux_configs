@@ -19,6 +19,8 @@ sh ./configure.sh
 ```
 
 ### Manual Installation
+*May not always be up to date!*
+
 ```bash
 # Move to the home directory
 cd ~/
