@@ -1,0 +1,14 @@
+[color]
+	ui = auto
+
+[core]
+	autocrlf = input
+	editor = vim
+
+[push]
+	default = current
+
+[user]
+	email = kroth@unaviamedia.ca
+	name = UnaviaMedia
+
