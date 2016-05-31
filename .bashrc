@@ -7,9 +7,6 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias grep='grep --exclude-dir=".svn"'
 
-export PAGER=/usr/bin/less
-export EDITOR=/usr/bin/vim
-export TERM="xterm-256color"
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then

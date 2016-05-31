@@ -10,3 +10,10 @@ fi
 PATH=$PATH:$HOME/bin
 
 export PATH
+export PAGER=/usr/bin/less
+export EDITOR=/usr/bin/vim
+export TERM="xterm-256color"
+
+# Enable longer shell history tracking
+export HISTFILESIZE=20000
+export HISTSIZE=10000

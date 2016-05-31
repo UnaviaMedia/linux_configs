@@ -1,3 +1,4 @@
+# Display a list of screen windows below the terminal
 hardstatus on
 hardstatus alwayslastline
 hardstatus string "%w"
