@@ -3,13 +3,13 @@ Contains common configuration settings for bash, git, screen, git, etc.
 
 ## Installation Steps
 ```bash
-//Move to the home directory
+# Move to the home directory
 cd ~/
 
-//Clone the git repository and create a linux_configs folder
+# Clone the git repository and create a linux_configs folder
 git clone https://UnaviaMedia@github.com/UnaviaMedia/linux_configs.gits
 
-//Move to the new directory and create the necessary symlinks
+# Move to the new directory and create the necessary symlinks
 cd linux_configs
 
 ln -s ~/linux_configs/.vim ~/.vim
