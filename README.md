@@ -7,9 +7,10 @@ Contains common configuration settings for bash, git, screen, git, etc.
 cd ~/
 
 # Clone the git repository and create a linux_configs folder
-git clone https://UnaviaMedia@github.com/UnaviaMedia/linux_configs.gits
+git clone https://UnaviaMedia@github.com/UnaviaMedia/linux_configs.git
 
 # Rename the new directory and enter it
+mv linux_configs .configs
 cd .configs
 
 # Create the necessary symlinks
