@@ -14,8 +14,8 @@ cd ~/
 git clone https://UnaviaMedia@github.com/UnaviaMedia/linux_configs.git
 
 # Run the configuration script
-cd linux_configs.sh
-sh ./linux_configs.sh
+cd linux_configs
+sh ./configure.sh
 ```
 
 ### Manual Installation
