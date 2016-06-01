@@ -23,6 +23,12 @@ Plugin 'plasticboy/vim-markdown'
 " Emmet for vim from github.com
 Plugin 'mattn/emmet-vim'
 
+" Commenting plugin from github.com
+Plugin 'tpope/vim-commentary'
+
+" Auto-completion for parantheses plugin from github.com
+Plugin 'Raimondi/delimitMate'
+
 " All plugins must be loaded before here!
 call vundle#end()
 filetype plugin indent on
