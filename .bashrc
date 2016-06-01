@@ -7,6 +7,7 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias grep='grep --exclude-dir=".svn"'
 alias less='less -r'
+alias ls='ls --color'
 
 
 # Source global definitions
