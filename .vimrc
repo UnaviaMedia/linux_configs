@@ -2,17 +2,39 @@
 " 01. General
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
-source ~/.vim/autoload/pathogen.vim
-call pathogen#infect()
+filetype off
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" 02. Events
+" 02. Vundle plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" Enable tab syntax detection
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Let Vundle handle itself
+Plugin 'VundleVim/Vundle.vim'
+
+" Solarized theme from github.com
+Plugin 'altercation/vim-colors-solarized'
+
+" Vim markdown plugin from github.com
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+
+" Emmet for vim from github.com
+Plugin 'mattn.github.io/emmet-vim'
+
+" All plugins must be loaded before here!
+call vundle#end()
 filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" 03. Theme/Colors
+" 03. Events
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable tab syntax detection
+" filetype plugin indent on
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" 04. Theme/Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Enable 256-colour mode
 set t_Co=256
@@ -30,7 +52,7 @@ set background=dark
 colorscheme solarized
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" 04. Vim UI
+" 05. Vim UI
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Enable line numbering
 set number
@@ -51,7 +73,7 @@ set ignorecase
 set hlsearch
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" 05. Text Formatting
+" 06. Text Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Setup tabs
 set autoindent
@@ -62,7 +84,7 @@ set noexpandtab
 set shiftwidth=4
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" 06. Alias
+" 07. Alias
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Move visually through long wrapped lines
 nnoremap j gj
