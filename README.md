@@ -11,7 +11,7 @@ Run the `configure.sh` script inside the repository folder after cloning
 cd ~/
 
 # Clone the git repository and create a linux_configs folder
-git clone https://UnaviaMedia@github.com/UnaviaMedia/linux_configs.git
+git clone https://github.com/UnaviaMedia/linux_configs.git
 
 # Run the configuration script
 cd linux_configs
@@ -26,7 +26,7 @@ sh ./configure.sh
 cd ~/
 
 # Clone the git repository and create a linux_configs folder
-git clone https://UnaviaMedia@github.com/UnaviaMedia/linux_configs.git
+git clone https://github.com/UnaviaMedia/linux_configs.git
 
 # Rename the new directory and enter it
 mv linux_configs .configs
