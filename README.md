@@ -19,24 +19,4 @@ sh ./configure.sh
 ```
 
 ### Manual Installation
-*May not always be up to date!*
-
-```bash
-# Move to the home directory
-cd ~/
-
-# Clone the git repository and create a linux_configs folder
-git clone https://UnaviaMedia@github.com/UnaviaMedia/linux_configs.git
-
-# Rename the new directory and enter it
-mv linux_configs .configs
-cd .configs
-
-# Create the necessary symlinks
-ln -si ~/.configs/.vim ~/.vim
-ln -si ~/.configs/.vimrc ~/.vimrc
-ln -si ~/.configs/.bashrc ~/.bashrc
-ln -si ~/.configs/.bash_profile ~/.bash_profile
-ln -si ~/.configs/.gitconfig ~/.gitconfig
-ln -si ~/.configs/.screenrc ~/.screenrc
-```
+Execute the `configure.sh` script line-by-line to troubleshoot

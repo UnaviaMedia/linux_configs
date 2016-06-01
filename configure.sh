@@ -7,6 +7,14 @@ cd ~/
 mv ~/linux_configs/ ~/.configs/
 cd .configs
 
+# Remove any old files
+rm -ri ~/.vim
+rm -i ~/.vimrc
+rm -i ~/.bashrc
+rm -i ~/.bash_profile
+rm -i ~/.gitconfig
+rm -i ~/.screenrc
+
 # Create the necessary symlinks
 ln -si ~/.configs/.vim ~/.vim
 ln -si ~/.configs/.vimrc ~/.vimrc
