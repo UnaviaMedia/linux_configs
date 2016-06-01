@@ -8,7 +8,7 @@ mv ~/linux_configs/ ~/.configs/
 cd .configs
 
 # Remove any old files
-rm -i ~/.vim
+rm -ri ~/.vim
 rm -i ~/.vimrc
 rm -i ~/.bashrc
 rm -i ~/.bash_profile
