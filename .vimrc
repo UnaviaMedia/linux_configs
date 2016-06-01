@@ -2,6 +2,8 @@
 " 01. General
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
+source ~/.vim/autoload/pathogen.vim
+call pathogen#infect()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 02. Events
@@ -71,7 +73,7 @@ nnoremap B ^
 nnoremap E $
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" 07. Miscellaneous
+" 08. Miscellaneous
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Remap the map leader from "\"
 let mapleader=","
