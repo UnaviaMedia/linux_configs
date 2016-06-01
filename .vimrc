@@ -21,7 +21,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
 " Emmet for vim from github.com
-Plugin 'mattn.github.io/emmet-vim'
+Plugin 'mattn/emmet-vim'
 
 " All plugins must be loaded before here!
 call vundle#end()
