@@ -32,6 +32,14 @@ git clone https://github.com/UnaviaMedia/linux_configs.git
 mv linux_configs .configs
 cd .configs
 
+# Remove any old files
+rm -i ~/.vim
+rm -i ~/.vimrc
+rm -i ~/.bashrc
+rm -i ~/.bash_profile
+rm -i ~/.gitconfig
+rm -i ~/.screenrc
+
 # Create the necessary symlinks
 ln -si ~/.vim
 ln -si ~/.vimrc
