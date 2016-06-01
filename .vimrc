@@ -39,6 +39,8 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+set laststatus=2
+
 " All plugins must be loaded before here!
 call vundle#end()
 filetype plugin indent on
