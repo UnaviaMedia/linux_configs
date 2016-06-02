@@ -16,6 +16,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Solarized theme from github.com
 Plugin 'altercation/vim-colors-solarized'
 
+" Git integration plugin from github.com
+Plugin 'tpope/vim-fugitive'
+
 " Base16 theme plugin from github.com
 "Plugin 'chriskempson/base16-vim'
 
@@ -32,6 +35,9 @@ Plugin 'tpope/vim-surround'
 " Commenting plugin from github.com
 Plugin 'tpope/vim-commentary'
 
+" Indicate trailing whitespace plugin from github.com
+Plugin 'bronson/vim-trailing-whitespace'
+
 " Auto-completion for parantheses plugin from github.com
 Plugin 'Raimondi/delimitMate'
 
@@ -39,7 +45,9 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-set laststatus=2
+"set laststatus=2
+"let g:airline_powerline_fonts=1
+"let g:airline_theme='solarized'
 
 " All plugins must be loaded before here!
 call vundle#end()
@@ -55,7 +63,7 @@ filetype plugin indent on
 " 04. Theme/Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Enable 256-colour mode
-set t_Co=256
+"set t_Co=256
 
 " Enable syntax highlighting
 syntax enable
