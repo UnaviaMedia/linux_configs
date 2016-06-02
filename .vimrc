@@ -63,7 +63,7 @@ filetype plugin indent on
 " 04. Theme/Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Enable 256-colour mode
-"set t_Co=256
+set t_Co=256
 
 " Enable syntax highlighting
 syntax enable
