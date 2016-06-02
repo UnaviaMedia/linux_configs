@@ -45,7 +45,9 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-set laststatus=2
+"set laststatus=2
+"let g:airline_powerline_fonts=1
+"let g:airline_theme='solarized'
 
 " All plugins must be loaded before here!
 call vundle#end()
@@ -61,7 +63,7 @@ filetype plugin indent on
 " 04. Theme/Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Enable 256-colour mode
-set t_Co=256
+"set t_Co=256
 
 " Enable syntax highlighting
 syntax enable
