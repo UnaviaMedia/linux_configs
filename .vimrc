@@ -16,6 +16,9 @@ Plugin 'VundleVim/Vundle.vim'
 " Solarized theme from github.com
 Plugin 'altercation/vim-colors-solarized'
 
+" Git integration plugin from github.com
+Plugin 'tpope/vim-fugitive'
+
 " Vim markdown plugin from github.com
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -25,6 +28,9 @@ Plugin 'mattn/emmet-vim'
 
 " Commenting plugin from github.com
 Plugin 'tpope/vim-commentary'
+
+" Indicate trailing whitespace plugin from github.com
+Plugin 'bronson/vim-trailing-whitespace'
 
 " Auto-completion for parantheses plugin from github.com
 Plugin 'Raimondi/delimitMate'
