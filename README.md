@@ -3,6 +3,9 @@ Contains common configuration settings for bash, git, screen, git, etc.
 
 ## Installation Steps
 
+####Prerequisites
+ - **Git** must be installed
+
 ### Automatic Installation (Recommended)
 Run the `configure.sh` script inside the repository folder after cloning
 

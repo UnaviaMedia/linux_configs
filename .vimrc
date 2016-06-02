@@ -19,12 +19,18 @@ Plugin 'altercation/vim-colors-solarized'
 " Git integration plugin from github.com
 Plugin 'tpope/vim-fugitive'
 
+" Base16 theme plugin from github.com
+"Plugin 'chriskempson/base16-vim'
+
 " Vim markdown plugin from github.com
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 
 " Emmet for vim from github.com
 Plugin 'mattn/emmet-vim'
+
+" Code surrounding plugin from github.com
+Plugin 'tpope/vim-surround'
 
 " Commenting plugin from github.com
 Plugin 'tpope/vim-commentary'
@@ -34,6 +40,12 @@ Plugin 'bronson/vim-trailing-whitespace'
 
 " Auto-completion for parantheses plugin from github.com
 Plugin 'Raimondi/delimitMate'
+
+" Airline status bar plugin from github.com
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+set laststatus=2
 
 " All plugins must be loaded before here!
 call vundle#end()
