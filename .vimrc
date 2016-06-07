@@ -33,13 +33,13 @@ Plugin 'mattn/emmet-vim'
 Plugin 'tpope/vim-surround'
 
 " Commenting plugin from github.com
-Plugin 'tpope/vim-commentary'
+" Plugin 'tpope/vim-commentary'
 
 " Indicate trailing whitespace plugin from github.com
 Plugin 'bronson/vim-trailing-whitespace'
 
 " Auto-completion for parantheses plugin from github.com
-Plugin 'Raimondi/delimitMate'
+" Plugin 'Raimondi/delimitMate'
 
 " Airline status bar plugin from github.com
 Plugin 'vim-airline/vim-airline'
