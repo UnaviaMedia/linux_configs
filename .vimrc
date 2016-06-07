@@ -45,9 +45,13 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-"set laststatus=2
-"let g:airline_powerline_fonts=1
-"let g:airline_theme='solarized'
+set laststatus=2
+let g:airline_powerline_fonts=1
+let g:airline_theme='solarized'
+
+if !exists('g:airline_powerline_fonts')
+	let g:airline_symbols = {}
+endif
 
 " All plugins must be loaded before here!
 call vundle#end()
@@ -63,7 +67,9 @@ filetype plugin indent on
 " 04. Theme/Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Enable 256-colour mode
-set t_Co=256
+if $TERM == "xterm-256color"
+	set t_Co=256
+endif
 
 " Enable syntax highlighting
 syntax enable
