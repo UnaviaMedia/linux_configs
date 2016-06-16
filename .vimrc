@@ -126,6 +126,9 @@ nnoremap k gk
 nnoremap B ^
 nnoremap E $
 
+" Miscellaneous
+cmap W w
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 08. Miscellaneous
 """"""""""""""""""""""""""""""""""""""""""""""""""
