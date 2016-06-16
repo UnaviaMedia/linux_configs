@@ -71,6 +71,10 @@ if $TERM == "xterm-256color"
 	set t_Co=256
 endif
 
+if $TERM == "screen-256color"
+	set t_Co=256
+endif
+
 " Enable syntax highlighting
 syntax enable
 
