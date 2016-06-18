@@ -13,7 +13,7 @@ export PATH
 export PAGER=/usr/bin/less
 export EDITOR=/usr/bin/vim
 #export TERM="xterm-256color"
-export TERM="screen-256color"
+#export TERM="screen-256color"
 
 # Enable longer shell history tracking
 export HISTFILESIZE=20000
