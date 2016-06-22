@@ -1,3 +1,5 @@
+term "screen-256color"
+
 # Display a list of screen windows below the terminal
 hardstatus on
 hardstatus alwayslastline
