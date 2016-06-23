@@ -48,6 +48,8 @@ Plugin 'vim-airline/vim-airline-themes'
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
+let g:airline#extensions#whitespace#mixed_indent_algo=1
+let g:airline#extensions#whitespace#checks=['trailing', 'long', 'indent']
 
 if !exists('g:airline_powerline_fonts')
 	let g:airline_symbols = {}
