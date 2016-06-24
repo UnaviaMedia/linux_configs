@@ -48,12 +48,32 @@ Plugin 'vim-airline/vim-airline-themes'
 set laststatus=2
 let g:airline_powerline_fonts=1
 let g:airline_theme='solarized'
-let g:airline#extensions#whitespace#mixed_indent_algo=1
-let g:airline#extensions#whitespace#checks=['trailing', 'long', 'indent']
 
 if !exists('g:airline_powerline_fonts')
 	let g:airline_symbols = {}
 endif
+
+let g:airline#extensions#whitespace#mixed_indent_algo=1
+let g:airline#extensions#whitespace#checks=['trailing', 'long', 'indent']
+
+"let g:airline_skip_empty_sections=1
+
+" (mode, crypt, paste, spell, iminsert)
+"let g:airline_section_a = ''
+" (hunks, branch)
+"let g:airline_section_b = ''
+" (bufferline/filename)
+"let g:airline_section_c = ''
+" (readonly, csv)
+"let g:airline_section_gutter = ''
+" (tagbar, filetype)
+"let g:airline_section_x = ''
+" (fileencoding, fileformat)
+"let g:airline_section_y = ''
+" (percentage, line number, column number)
+"let g:airline_section_z = ''
+" (whitespace)
+"let g:airline_section_warning = ''
 
 " All plugins must be loaded before here!
 call vundle#end()
