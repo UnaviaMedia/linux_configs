@@ -1,4 +1,4 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 " 01. General
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
@@ -19,6 +19,18 @@ Plugin 'altercation/vim-colors-solarized'
 " Git integration plugin from github.com
 Plugin 'tpope/vim-fugitive'
 
+" Syntax highlighting from github.com
+" Plugin 'scrooloose/syntastic'
+
+"	set statusline+=%#warningmsg#
+"	set statusline+=%{SyntasticStatusLineFlag()}
+"	set statusline+=%*
+
+"	let g:syntastic_always_populate_loc_list = 1
+"	let g:syntastic_auto_loc_list = 1
+"	let g:syntastic_chck_on_open = 1
+"	let g:syntastic_check_on_wq = 0
+
 " Base16 theme plugin from github.com
 "Plugin 'chriskempson/base16-vim'
 
@@ -36,7 +48,7 @@ Plugin 'tpope/vim-surround'
 " Plugin 'tpope/vim-commentary'
 
 " Indicate trailing whitespace plugin from github.com
-Plugin 'bronson/vim-trailing-whitespace'
+"Plugin 'bronson/vim-trailing-whitespace'
 
 " Auto-completion for parantheses plugin from github.com
 " Plugin 'Raimondi/delimitMate'
@@ -53,6 +65,11 @@ if !exists('g:airline_powerline_fonts')
 	let g:airline_symbols = {}
 endif
 
+" Configure the bufferline
+let g:airline#extensions#tabline#enabled=1
+let g:airlien#extensions#tabline#fnamemod=':t'
+
+" Configure the whitespace plugin
 let g:airline#extensions#whitespace#mixed_indent_algo=1
 let g:airline#extensions#whitespace#checks=['trailing', 'long', 'indent']
 
@@ -134,6 +151,9 @@ set ignorecase
 
 " Highlight search matches
 set hlsearch
+
+" Diallow editing of invisible buffers
+set hidden
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Text Formatting
