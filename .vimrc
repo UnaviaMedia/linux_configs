@@ -155,6 +155,9 @@ set hlsearch
 " Diallow editing of invisible buffers
 set hidden
 
+" Enable tab completion (when opening buffers)
+set wildmenu
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Text Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""
