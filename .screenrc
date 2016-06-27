@@ -22,3 +22,6 @@ altscreen on
 
 # Don't display the welcome message
 startup_message off
+
+# Keep a history within screen of previous commands
+defscrollback 10000
