@@ -19,18 +19,6 @@ Plugin 'altercation/vim-colors-solarized'
 " Git integration plugin from github.com
 Plugin 'tpope/vim-fugitive'
 
-" Syntax highlighting from github.com
-" Plugin 'scrooloose/syntastic'
-
-"	set statusline+=%#warningmsg#
-"	set statusline+=%{SyntasticStatusLineFlag()}
-"	set statusline+=%*
-
-"	let g:syntastic_always_populate_loc_list = 1
-"	let g:syntastic_auto_loc_list = 1
-"	let g:syntastic_chck_on_open = 1
-"	let g:syntastic_check_on_wq = 0
-
 " Base16 theme plugin from github.com
 "Plugin 'chriskempson/base16-vim'
 
