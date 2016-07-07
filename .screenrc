@@ -1,7 +1,28 @@
+# Enable 256 colour compatability
 term "screen-256color"
 
 # Display a list of screen windows below the terminal
 hardstatus on
 hardstatus alwayslastline
-hardstatus string "%w"
+hardstatus string "%{= KW} %-w%{+b Kc}%n %t%{-}%+w %= %{= Ky}%C%a  %Y-%M-%d%{-} "
+# %{= KW}	: Set colors to bright white on dull black and keep text styles the same (=)
+# %-w		: Display windows before current window
+# %{= Kc}	: Set colors to cyan on dull black and keep text styles the same (=)
+# %n		: Display number for current window
+# %t		: Disply title for current window
+# {-}		: Reset colors to previous setting
+# %+w		: Display windows after current window
+# %=		: Align to the right (by filling remaining space)
+# %C		: Display current time
+# %a		: Display current am/pm
+# %Y		: Display current year
+# %M		: Display current month
+# %d		: Display current day
 altscreen on
+
+# Don't display the welcome message
+startup_message off
+
+# Keep a history within screen of previous commands
+defscrollback 10000
+

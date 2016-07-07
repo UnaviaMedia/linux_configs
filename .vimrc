@@ -1,4 +1,4 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""
 " 01. General
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible
@@ -36,7 +36,7 @@ Plugin 'tpope/vim-surround'
 " Plugin 'tpope/vim-commentary'
 
 " Indicate trailing whitespace plugin from github.com
-Plugin 'bronson/vim-trailing-whitespace'
+"Plugin 'bronson/vim-trailing-whitespace'
 
 " Auto-completion for parantheses plugin from github.com
 " Plugin 'Raimondi/delimitMate'
@@ -53,6 +53,33 @@ if !exists('g:airline_powerline_fonts')
 	let g:airline_symbols = {}
 endif
 
+" Configure the bufferline
+let g:airline#extensions#tabline#enabled=1
+let g:airlien#extensions#tabline#fnamemod=':t'
+
+" Configure the whitespace plugin
+let g:airline#extensions#whitespace#mixed_indent_algo=1
+let g:airline#extensions#whitespace#checks=['trailing', 'long', 'indent']
+
+"let g:airline_skip_empty_sections=1
+
+" (mode, crypt, paste, spell, iminsert)
+"let g:airline_section_a = ''
+" (hunks, branch)
+"let g:airline_section_b = ''
+" (bufferline/filename)
+"let g:airline_section_c = ''
+" (readonly, csv)
+"let g:airline_section_gutter = ''
+" (tagbar, filetype)
+"let g:airline_section_x = ''
+" (fileencoding, fileformat)
+"let g:airline_section_y = ''
+" (percentage, line number, column number)
+"let g:airline_section_z = ''
+" (whitespace)
+"let g:airline_section_warning = ''
+
 " All plugins must be loaded before here!
 call vundle#end()
 filetype plugin indent on
@@ -66,6 +93,15 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 04. Theme/Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""
+" Enable 256-colour mode
+if $TERM == "xterm-256color"
+	set t_Co=256
+endif
+
+if $TERM == "screen-256color"
+	set t_Co=256
+endif
+
 " Enable syntax highlighting
 syntax enable
 
@@ -104,6 +140,12 @@ set ignorecase
 " Highlight search matches
 set hlsearch
 
+" Diallow editing of invisible buffers
+set hidden
+
+" Enable tab completion (when opening buffers)
+set wildmenu
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 06. Text Formatting
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -125,9 +167,6 @@ nnoremap k gk
 " Move to beginning/end of line
 nnoremap B ^
 nnoremap E $
-
-" Miscellaneous
-cmap W w
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 08. Miscellaneous
