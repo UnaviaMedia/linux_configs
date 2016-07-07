@@ -12,7 +12,7 @@ PATH=$PATH:$HOME/bin
 export PATH
 export PAGER=/usr/bin/less
 export EDITOR=/usr/bin/vim
-#export TERM="xterm-256color"
+export TERM="xterm-256color"
 #export TERM="screen-256color"
 
 # Enable longer shell history tracking
@@ -21,6 +21,6 @@ export HISTSIZE=10000
 
 ########################################
 # Local Changes Only
-if [ -f ~/.bash_profile_local ]; then
-	. ~/.bash_profile_local
-fi
+#if [ -f ~/.bash_profile_local ]; then
+#	. ~/.bash_profile_local
+#fi

@@ -69,13 +69,13 @@ filetype plugin indent on
 " Enable syntax highlighting
 syntax enable
 
-" Set the number of colours for solarized
-let g:solarized_termcolors=256
-
 " Enable 256-colour mode
 if $TERM == "xterm-256color"
 	set t_Co=256
 endif
+
+" Set the number of colours for solarized
+let g:solarized_termcolors=256
 
 " Use the dark background
 set background=dark
