@@ -8,12 +8,29 @@ mv ~/linux_configs/ ~/.configs/
 cd .configs
 
 # Remove any old files
-rm -ri ~/.vim
-rm -i ~/.vimrc
-rm -i ~/.bashrc
-rm -i ~/.bash_profile
-rm -i ~/.gitconfig
-rm -i ~/.screenrc
+if [ -d ~/.configs/.vim ]
+	rm -ri ~/.vim
+fi
+
+if [ -f ~/.configs/.vimrc ]
+	rm -i ~/.vimrc
+fi
+
+if [ -f ~/.configs/.bashrc ]
+	rm -i ~/.bashrc
+fi
+
+if [ -f ~/.configs/.bash_profile ]
+	rm -i ~/.bash_profile
+fi
+
+if [ -f ~/.configs/.gitconfig ]
+	rm -i ~/.gitconfig
+fi
+
+if [ -f ~/.configs/.screenrc ]
+	rm -i ~/.screenrc
+fi
 
 # Create the necessary symlinks
 ln -si ~/.configs/.vim ~/.vim
