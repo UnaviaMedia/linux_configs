@@ -8,27 +8,27 @@ mv ~/linux_configs/ ~/.configs/
 cd .configs
 
 # Remove any old files
-if [ -d ~/.configs/.vim ]
+if [ -d ~/.vim ]
 	rm -ri ~/.vim
 fi
 
-if [ -f ~/.configs/.vimrc ]
+if [ -f ~/.vimrc ]
 	rm -i ~/.vimrc
 fi
 
-if [ -f ~/.configs/.bashrc ]
+if [ -f ~/.bashrc ]
 	rm -i ~/.bashrc
 fi
 
-if [ -f ~/.configs/.bash_profile ]
+if [ -f ~/.bash_profile ]
 	rm -i ~/.bash_profile
 fi
 
-if [ -f ~/.configs/.gitconfig ]
+if [ -f ~/.gitconfig ]
 	rm -i ~/.gitconfig
 fi
 
-if [ -f ~/.configs/.screenrc ]
+if [ -f ~/.screenrc ]
 	rm -i ~/.screenrc
 fi
 
