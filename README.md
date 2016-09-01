@@ -1,16 +1,6 @@
 # linux_configs
 Contains common configuration settings for bash, git, screen, git, etc.
 
-## Overview
-
-| File | Changes |
-|------|---------|
-| .bash_profile |
-| .bashrc | 
-| .vimrc | 
-| .gitconfig | 
-| .screenrc | 
-
 ## Installation Steps
 
 #### Prerequisites
