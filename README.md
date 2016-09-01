@@ -1,13 +1,23 @@
 # linux_configs
 Contains common configuration settings for bash, git, screen, git, etc.
 
+## Overview
+
+| File | Changes |
+|------|---------|
+| .bash_profile |
+| .bashrc | 
+| .vimrc | 
+| .gitconfig | 
+| .screenrc | 
+
 ## Installation Steps
 
 #### Prerequisites
  - **Git** must be installed
 
 ### Automatic Installation (Recommended)
-Run the `configure.sh` script inside the repository folder after cloning
+Run the `configure.sh` script inside the repository folder after cloning. The configuration script will determine what files already exist and ask the use to confirm replacing them.
 
 ```bash
 # Move to the home directory
