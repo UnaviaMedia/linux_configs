@@ -5,7 +5,7 @@ cd ~/
 
 # Rename the new directory and enter it
 mv ~/linux_configs/ ~/.configs/
-cd .configs
+cd ~/.configs
 
 # Remove any old files
 if [ -d ~/.vim ]; then
@@ -40,3 +40,4 @@ ln -si ~/.configs/.bash_profile ~/.bash_profile
 ln -si ~/.configs/.gitconfig ~/.gitconfig
 ln -si ~/.configs/.screenrc ~/.screenrc
 
+cd ~/.configs
