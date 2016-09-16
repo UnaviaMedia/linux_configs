@@ -3,6 +3,8 @@ Contains common configuration settings for bash, git, screen, git, etc.
 
 ## Installation Steps
 
+Run `perl 256colors.txt` to check colour compatibility
+
 #### Prerequisites
  - **Git** must be installed
 
