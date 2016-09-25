@@ -3,11 +3,13 @@ Contains common configuration settings for bash, git, screen, git, etc.
 
 ## Installation Steps
 
+Run `perl 256colors.txt` to check colour compatibility
+
 #### Prerequisites
  - **Git** must be installed
 
 ### Automatic Installation (Recommended)
-Run the `configure.sh` script inside the repository folder after cloning
+Run the `configure.sh` script inside the repository folder after cloning. The configuration script will determine what files already exist and ask the use to confirm replacing them.
 
 ```bash
 # Move to the home directory
