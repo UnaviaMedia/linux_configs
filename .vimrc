@@ -93,25 +93,24 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 04. Theme/Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""
-" Enable 256-colour mode
-if $TERM == "xterm-256color"
-	set t_Co=256
-endif
+if has("gui_running")
+	set background=dark
+else
+	" Enable 256-colour mode
+	if $TERM == "xterm-256color"
+	"	set t_Co=256
+	endif
 
-if $TERM == "screen-256color"
-	set t_Co=256
+	if $TERM == "screen-256color"
+	"	set t_Co=256
+	endif
+
+	" Set the number of colours for solarized
+	"let g:solarized_termcolors=256
 endif
 
 " Enable syntax highlighting
 syntax enable
-
-" Enable 256-colour mode
-if $TERM == "xterm-256color"
-	set t_Co=256
-endif
-
-" Set the number of colours for solarized
-let g:solarized_termcolors=256
 
 " Use the dark background
 set background=dark

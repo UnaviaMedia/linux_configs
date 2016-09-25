@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/home/kendall/.configs/.vim'
 let g:netrw_dirhist_2='/src/client_filter/browser_tests/src/test/java/com/netsweeper/browsertests'
+let g:netrw_dirhist_3='/home/kendall/Development/UnaviaMedia/.provision'
