@@ -19,6 +19,9 @@ Plugin 'altercation/vim-colors-solarized'
 " Git integration plugin from github.com
 Plugin 'tpope/vim-fugitive'
 
+" Nerdtree plugin from github.com
+"Plugin 'scrooloose/nerdtree'
+
 " Base16 theme plugin from github.com
 "Plugin 'chriskempson/base16-vim'
 
@@ -102,13 +105,12 @@ if $TERM == "screen-256color"
 	set t_Co=256
 endif
 
+if $STY != ""
+
+endif
+
 " Enable syntax highlighting
 syntax enable
-
-" Enable 256-colour mode
-if $TERM == "xterm-256color"
-	set t_Co=256
-endif
 
 " Set the number of colours for solarized
 let g:solarized_termcolors=256
@@ -168,16 +170,27 @@ nnoremap k gk
 nnoremap B ^
 nnoremap E $
 
+" Remap the escape key from "ESC"
+inoremap jk <esc>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 08. Miscellaneous
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Remap the map leader from "\"
 let mapleader=","
 
-" Remap the escape key from "ESC"
-inoremap jk <esc>
-
 " Fix vim issues with putty and theming
 set t_ut=
 au VimLeave * !echo -ne "\033[0m"
 
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" 09. NERDTree
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Remap the NERDTree key
+" map <C-n> :NERDTreeToggle<CR>
+
+" Delete buffers of files deleted with NERDTree
+" let NERDTreeAutoDeleteBuffer=1
+
+" Minimalize the UI
+" let NERDTreeMinimalUI=1

@@ -1,4 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/kendall/.configs/.vim'
 let g:netrw_dirhist_2='/src/client_filter/browser_tests/src/test/java/com/netsweeper/browsertests'
+let g:netrw_dirhist_3='/src/ns2/webadmin-2.6/include/policy'
+let g:netrw_dirhist_4='/src/ns2/webadmin-2.6/include/tables'
+let g:netrw_dirhist_5='/src/ns2/webadmin-2.6/include'
+let g:netrw_dirhist_6='/src/ns2/webadmin-2.6/include/config'
+let g:netrw_dirhist_7='/src/ns2/webadmin-2.6/include'
+let g:netrw_dirhist_8='/src/ns2/webadmin-2.6/common/templates/webadmin2015/style'
