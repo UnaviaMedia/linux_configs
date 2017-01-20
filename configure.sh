@@ -44,13 +44,20 @@ ln -si ~/.configs/.screenrc ~/.screenrc
 
 # Function to install solarized themes
 install_solarized() {
+	# Download Solarized theme
 	cd ~/.configs/themes/
 	git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git
 	cd gnome-terminal-colors-solarized
 	./install.sh
 
-	# Add symbolic link for directory colors fix and evaluate fix
-	ln -si ~/.configs/themes/gnome-terminal-colors-solarized/dircolors ~/.dircolors
+	# Download Solarized dircolours fix
+	cd ~/.configs/themes
+	git clone https://github.com/seebi/dircolors-solarized.git
+
+	# Create symlink
+	ln -si ~/.configs/themes/dircolors-solarized/dircolors.256dark ~/.dircolors
+
+	# Update the dircolours
 	eval `dircolors ~/.dircolors`
 }
 

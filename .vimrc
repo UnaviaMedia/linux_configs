@@ -98,6 +98,9 @@ filetype plugin indent on
 " Enable syntax highlighting
 syntax enable
 
+" Set dark background
+set background=dark
+
 " Use the solarized colour scheme
 colorscheme solarized
 
