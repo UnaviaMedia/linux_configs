@@ -13,6 +13,9 @@ call vundle#begin()
 " Let Vundle handle itself
 Plugin 'VundleVim/Vundle.vim'
 
+" Vim Solarized theme plugin
+Plugin 'altercation/vim-colors-solarized'
+
 " Git integration plugin from github.com
 Plugin 'tpope/vim-fugitive'
 
@@ -94,9 +97,6 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
-
-" Use the dark background
-set background=dark
 
 " Use the solarized colour scheme
 colorscheme solarized

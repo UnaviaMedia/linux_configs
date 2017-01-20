@@ -1,5 +1,5 @@
 # Enable 256 colour compatability
-term "screen-256color"
+# term "screen-256color"
 
 # Display a list of screen windows below the terminal
 hardstatus on
@@ -25,4 +25,3 @@ startup_message off
 
 # Keep a history within screen of previous commands
 defscrollback 10000
-
