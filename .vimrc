@@ -75,7 +75,9 @@ let g:airline#extensions#whitespace#checks=['trailing', 'long', 'indent']
 "let g:airline_section_warning = ''
 
 " Source local Vundle plugins
-source ~/.vimrc_local_vundle
+if filereadable(glob("~/.vimrc_local_vundle"))
+	source ~/.vimrc_local_vundle
+endif
 
 " All plugins must be loaded before here!
 call vundle#end()
@@ -157,4 +159,6 @@ inoremap jk <esc>
 " 09. Local Files
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Source local vim settings
-source ~/.vimrc_local
+if filereadable(glob("~/.vimrc_local"))
+	source ~/.vimrc_local
+endif
