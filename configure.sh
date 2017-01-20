@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# Move to the home directory
-cd ~/
-
-# Rename the new directory and enter it
-mv ~/linux_configs/ ~/.configs/
+# Move to the configs directory
 cd ~/.configs
 
 # Remove any old files
