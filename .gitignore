@@ -1,7 +1,9 @@
 # Ignore vim bundles
 .vim/bundle/*
-.vim/bundle/*/
 # Don't ignore Vundle bundle
 !.vim/bundle/Vundle.vim
 
 .netrwhist
+
+# Ignore themes
+themes/*
