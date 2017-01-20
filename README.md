@@ -1,15 +1,15 @@
 # linux_configs
 Contains common configuration settings for bash, git, screen, git, etc.
 
-**Note:**
-Many of the dot files can be overwritten by creating a specific file that will be sourced by the individual files.
+**Note:** Many of the dot files can be overwritten by creating a specific file that will be sourced by the individual files.
 
 ## Installation Steps
 
-Run `perl 256colors.txt` to check colour compatibility
+Run `perl 256colors.txt` to check colour compatibility (on servers)
 
-### Prerequisites
- - **Git** must be installed
+**Prerequisites**
+
+ - `git` must be installed
  - `dconf-cli` must be installed for Solarized terminal theme
 
 ### Automatic Installation (Recommended)
@@ -27,32 +27,9 @@ cd linux_configs
 sh ./configure.sh
 ```
 
+**Solarized Notes:** Installing the Solarized theme and Vim plugins can have several dependencies:
+- `Hack` font for `vim-airline` icons
+- `dir-colors` fix for Solarized terminal directory listings
+
 ### Manual Installation
 Execute the `configure.sh` script line-by-line to troubleshoot
-
-## Profile Overrides
-**Git** ~ `.gitconfig_local`
-```
-[user]
-	email = user@example.com
-	name = John Doe
-```
-
-**Bash** ~ `.bashrc_local`
-```bash
-# Set $TERM color compatibility
-export TERM="xterm-256color"
-```
-
-**Vim** ~ `.vimrc_local` & `.vimrc_local_vundle`
-```vim
-" Solarized theme from github.com
-Plugin 'altercation/vim-colors-solarized'
-```
-```vim
-" Use the dark background
-set background=dark
-
-" Use the solarized colour scheme
-colorscheme solarized
-```
