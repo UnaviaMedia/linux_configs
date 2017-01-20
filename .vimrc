@@ -30,7 +30,7 @@ Plugin 'tpope/vim-surround'
 " Plugin 'tpope/vim-commentary'
 
 " Indicate trailing whitespace plugin from github.com
-"Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'bronson/vim-trailing-whitespace'
 
 " Auto-completion for parantheses plugin from github.com
 " Plugin 'Raimondi/delimitMate'
