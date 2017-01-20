@@ -13,14 +13,8 @@ call vundle#begin()
 " Let Vundle handle itself
 Plugin 'VundleVim/Vundle.vim'
 
-" Solarized theme from github.com
-Plugin 'altercation/vim-colors-solarized'
-
 " Git integration plugin from github.com
 Plugin 'tpope/vim-fugitive'
-
-" Base16 theme plugin from github.com
-"Plugin 'chriskempson/base16-vim'
 
 " Vim markdown plugin from github.com
 Plugin 'godlygeek/tabular'
@@ -80,6 +74,9 @@ let g:airline#extensions#whitespace#checks=['trailing', 'long', 'indent']
 " (whitespace)
 "let g:airline_section_warning = ''
 
+" Source local Vundle plugins
+source ~/.vimrc_local_vundle
+
 " All plugins must be loaded before here!
 call vundle#end()
 filetype plugin indent on
@@ -93,22 +90,6 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 04. Theme/Colors
 """"""""""""""""""""""""""""""""""""""""""""""""""
-if has("gui_running")
-	set background=dark
-else
-	" Enable 256-colour mode
-	if $TERM == "xterm-256color"
-	"	set t_Co=256
-	endif
-
-	if $TERM == "screen-256color"
-	"	set t_Co=256
-	endif
-
-	" Set the number of colours for solarized
-	"let g:solarized_termcolors=256
-endif
-
 " Enable syntax highlighting
 syntax enable
 
@@ -163,10 +144,6 @@ set shiftwidth=4
 nnoremap j gj
 nnoremap k gk
 
-" Move to beginning/end of line
-nnoremap B ^
-nnoremap E $
-
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " 08. Miscellaneous
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -176,7 +153,8 @@ let mapleader=","
 " Remap the escape key from "ESC"
 inoremap jk <esc>
 
-" Fix vim issues with putty and theming
-set t_ut=
-au VimLeave * !echo -ne "\033[0m"
-
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" 09. Local Files
+""""""""""""""""""""""""""""""""""""""""""""""""""
+" Source local vim settings
+source ~/.vimrc_local

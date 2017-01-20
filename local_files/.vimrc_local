@@ -1,0 +1,25 @@
+# Enable solarized-vim colour scheme
+if has("gui_running")
+	set background=dark
+else
+	" Enable 256-colour mode
+	if $TERM == "xterm-256color"
+		set t_Co=256
+	endif
+	if $TERM == "screen-256color"
+		set t_Co=256
+	endif
+
+	" Set the number of colours for solarized
+	let g:solarized_termcolors=256
+endif
+
+" Use the dark background
+set background=dark
+
+" Use the solarized colour scheme
+colorscheme solarized
+
+" Fix vim issues with putty and theming
+set t_ut=
+au VimLeave * !echo -ne "\033[0m"

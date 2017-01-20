@@ -1,14 +1,12 @@
 [color]
-	ui = auto
+	ui = auto					# Automatic colour detection/output
 
 [core]
-	autocrlf = input
-	editor = vim
+	autocrlf = input			# Configure file ending type
+	editor = vim				# Use vim as standard editor
 
 [push]
-	default = current
+	default = current			# Set default push behaviour
 
-[user]
-	email = kroth@unaviamedia.ca
-	name = UnaviaMedia
-
+[include]
+	path = ~/.gitconfig_local	# Include profile settings

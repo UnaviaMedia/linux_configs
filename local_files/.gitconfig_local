@@ -1,0 +1,4 @@
+# User settings
+[user]
+	email = kroth@unaviamedia.ca	# Git email
+	name = UnaviaMedia				# Git username

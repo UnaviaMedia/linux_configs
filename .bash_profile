@@ -6,7 +6,6 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-
 PATH=$PATH:$HOME/bin
 
 export PATH
@@ -19,9 +18,9 @@ export EDITOR=/usr/bin/vim
 export HISTFILESIZE=20000
 export HISTSIZE=10000
 
-# Set bash prompt if it exists
-if [ -f ~/.configs/.bash_prompt ]; then
-	. ~/.configs/.bash_prompt
+# Set bash prompt
+if [ -f ~/.configs/include/.bash_prompt ]; then
+	. ~/.configs/include/.bash_prompt
 fi
 
 ########################################
