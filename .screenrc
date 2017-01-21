@@ -1,23 +1,34 @@
 # Enable 256 colour compatability
-# term "screen-256color"
+term "screen-256color"
+
+# Allow bold colors (necessary?)
+attrcolor b ".I"
 
 # Display a list of screen windows below the terminal
 hardstatus on
 hardstatus alwayslastline
-hardstatus string "%{= KW} %-w%{+b Kc}%n %t%{-}%+w %= %{= Ky}%C%a  %Y-%M-%d%{-} "
-# %{= KW}	: Set colors to bright white on dull black and keep text styles the same (=)
+hardstatus string "%{+d Kw} %-w%{= Kr}[%{= KW}%n %t%{-}]%{-}%+w %= %H | %{= Ky}%Y-%M-%d %C%a%{-} "
+# %{+d KW}	: Set colors to bright white on dull black and set as dim (+d)
 # %-w		: Display windows before current window
-# %{= Kc}	: Set colors to cyan on dull black and keep text styles the same (=)
+# %{= Kr}	: Set colors to red on dull black and keep text styles the same (=)
+# [			: Opening bracket for current window
+# %{= KW}	: Set colors to white on dull black and keep text styles the same (=)
 # %n		: Display number for current window
-# %t		: Disply title for current window
+# %t		: Display title for current window
+# {-}		: Reset colors to previous setting
+# ]			: Closing bracket for current window
 # {-}		: Reset colors to previous setting
 # %+w		: Display windows after current window
 # %=		: Align to the right (by filling remaining space)
-# %C		: Display current time
-# %a		: Display current am/pm
+# %H		: Display hostname
+# |			: Separator between hostname and date/time
+# %{= Ky}	: Set colors to yellow on dull black and keep text styles the same (=)
 # %Y		: Display current year
 # %M		: Display current month
 # %d		: Display current day
+# %C		: Display current time
+# %a		: Display current am/pm
+# {-}		: Reset colors to previous setting
 altscreen on
 
 # Don't display the welcome message
@@ -25,3 +36,16 @@ startup_message off
 
 # Keep a history within screen of previous commands
 defscrollback 10000
+
+
+# Declare bash screen
+screen
+title bash
+
+# Declare vim screen
+screen
+title vim
+
+# Switch back to first screen
+select 1
+select 0
