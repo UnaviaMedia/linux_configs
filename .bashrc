@@ -22,6 +22,8 @@ export TERM="screen-256color"
 export HISTFILESIZE=20000
 export HISTSIZE=10000
 
+eval `dircolors ~/.dircolors`
+
 
 # Set bash prompt
 if [ -f ~/.configs/include/.bash_prompt ]; then
