@@ -2,17 +2,20 @@
 term "screen-256color"
 
 # Allow bold colors (necessary?)
-attrcolor b ".I"
+#attrcolor b ".I"
+
+# Set utf-8 encoding
+#defutf8 on
 
 # Display a list of screen windows below the terminal
 hardstatus on
 hardstatus alwayslastline
-hardstatus string "%{+d Kw} %-w%{= Kr}[%{= KW}%n %t%{-}]%{-}%+w %= %H | %{= Ky}%Y-%M-%d %C%a%{-} "
-# %{+d KW}	: Set colors to bright white on dull black and set as dim (+d)
+hardstatus string "%{=d .w} %-w%{= .r}[%{= .w}%n %t%{-}]%{-}%+w %= %H | %{= .y}%Y-%M-%d %C%a%{-} "
+# %{=d .w}	: Set foreground color to white (dimmed)
 # %-w		: Display windows before current window
-# %{= Kr}	: Set colors to red on dull black and keep text styles the same (=)
+# %{= .r}	: Set foreground color to red (normal)
 # [			: Opening bracket for current window
-# %{= KW}	: Set colors to white on dull black and keep text styles the same (=)
+# %{= .w}	: Set foreground color to white (normal)
 # %n		: Display number for current window
 # %t		: Display title for current window
 # {-}		: Reset colors to previous setting
@@ -22,7 +25,7 @@ hardstatus string "%{+d Kw} %-w%{= Kr}[%{= KW}%n %t%{-}]%{-}%+w %= %H | %{= Ky}%
 # %=		: Align to the right (by filling remaining space)
 # %H		: Display hostname
 # |			: Separator between hostname and date/time
-# %{= Ky}	: Set colors to yellow on dull black and keep text styles the same (=)
+# %{= .y}	: Set foreground color to yellow (normal)
 # %Y		: Display current year
 # %M		: Display current month
 # %d		: Display current day
