@@ -29,6 +29,14 @@ sudo apt install numix-gtk-theme numix-icon-theme-circle
 
 ### Solarized Colourscheme
 
+```bash
+sudo apt-get install dconf-cli
+
+git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+cd gnome-terminal-colors-solarized
+./install.sh
+```
+
 ### Bash Prompt
 Include the following file somewhere in the Linux profile configs (ie. `bashrc`):
 
