@@ -2,9 +2,28 @@
 
 ## Themes
 
+## Unity Tweak Tool
+Unity Tweak Tool is needed to make any changes to themes
+
+```bash
+sudo apt install unity-tweak-tool
+```
+
 ### Adapta
 
+```bash
+sudo apt-add-repository ppa:tista/adapta
+sudo apt update
+sudo apt install adapta-gtk-theme
+```
+
 ### Numix-round Icons
+
+```bash
+sudo add-apt-repository ppa:numix/ppa
+sudo apt update
+sudo apt install numix-gtk-theme numix-icon-theme-circle
+```
 
 ## Terminal
 
