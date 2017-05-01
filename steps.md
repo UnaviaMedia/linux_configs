@@ -37,3 +37,9 @@ Include the following file somewhere in the Linux profile configs (ie. `bashrc`)
 ## Miscellaneous
 
 ### Center Windows
+To center windows upon opening, install the following software and then go to `Window Management -> Window Placement`
+
+```bash
+sudo apt install compizconfig-settings-manager
+sudo apt install compiz-plugins
+```
